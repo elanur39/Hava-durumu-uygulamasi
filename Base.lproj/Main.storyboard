@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Wj-aJ-f3E">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HavaDurumuUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="0mi-cv-ALv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAVA DURUMU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqP-5a-nrd">
+                                <rect key="frame" x="20" y="132" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hava durumunu öğrenmek istediğiniz şehri girinizz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9I-G5-Zc0">
+                                <rect key="frame" x="20" y="266" width="374" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şehir Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWA-dW-H7T">
+                                <rect key="frame" x="20" y="317" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkn-qu-WkV">
+                                <rect key="frame" x="20" y="377" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29730783180893561" green="0.38469185827328534" blue="0.79827183485031128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hava Durumunu Göster">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzi-IH-PAl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0mi-cv-ALv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="95S-sb-3cz"/>
+                            <constraint firstItem="0mi-cv-ALv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dju-Ek-mcH"/>
+                            <constraint firstAttribute="trailing" secondItem="0mi-cv-ALv" secondAttribute="trailing" id="udh-63-LD5"/>
+                            <constraint firstAttribute="bottom" secondItem="0mi-cv-ALv" secondAttribute="bottom" id="zx6-DJ-ERc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t9h-oI-awd"/>
+                    <connections>
+                        <outlet property="btn" destination="Wkn-qu-WkV" id="cXs-ts-5On"/>
+                        <outlet property="textField" destination="iWA-dW-H7T" id="TnC-2v-5Zw"/>
+                        <segue destination="Pkp-bu-dni" kind="show" identifier="toDetail" id="djD-p9-xxH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059.4202898550725" y="-28.794642857142854"/>
+        </scene>
+        <!--Hava Durumu-->
+        <scene sceneID="Sfu-Tu-VBs">
+            <objects>
+                <viewController storyboardIdentifier="toDetail" id="Pkp-bu-dni" customClass="DetailViewController" customModule="HavaDurumuUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVH-lr-7gC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="5bt-Sd-GOP">
+                                <rect key="frame" x="0.0" y="0.0" width="427" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qky-yg-T0E">
+                                <rect key="frame" x="26" y="326" width="374" height="34"/>
+                                <color key="tintColor" red="0.984079072" green="0.984079072" blue="0.984079072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="SYA-YW-JfD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCF-Tj-lHu">
+                                <rect key="frame" x="20" y="216" width="374" height="68"/>
+                                <color key="tintColor" red="0.98407907196969702" green="0.98407907196969702" blue="0.98407907196969702" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="51"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6DA-t8-kGI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qky-yg-T0E" firstAttribute="top" secondItem="tCF-Tj-lHu" secondAttribute="bottom" constant="42" id="BPz-U1-gBn"/>
+                            <constraint firstItem="6DA-t8-kGI" firstAttribute="bottom" secondItem="qky-yg-T0E" secondAttribute="bottom" constant="502" id="Eyv-oV-Gan"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5bt-Sd-GOP" secondAttribute="trailing" constant="-33" id="SAB-65-nec"/>
+                            <constraint firstItem="5bt-Sd-GOP" firstAttribute="leading" secondItem="6DA-t8-kGI" secondAttribute="leading" id="VH9-ib-IBe"/>
+                            <constraint firstItem="5bt-Sd-GOP" firstAttribute="centerY" secondItem="aVH-lr-7gC" secondAttribute="centerY" id="X2A-QQ-qQu"/>
+                            <constraint firstItem="tCF-Tj-lHu" firstAttribute="trailing" secondItem="aVH-lr-7gC" secondAttribute="trailingMargin" id="csn-UE-TEO"/>
+                            <constraint firstItem="tCF-Tj-lHu" firstAttribute="leading" secondItem="aVH-lr-7gC" secondAttribute="leadingMargin" id="lLP-Tr-tSC"/>
+                            <constraint firstItem="tCF-Tj-lHu" firstAttribute="top" secondItem="6DA-t8-kGI" secondAttribute="top" constant="124" id="nFd-uo-3Mj"/>
+                            <constraint firstItem="qky-yg-T0E" firstAttribute="leading" secondItem="6DA-t8-kGI" secondAttribute="leading" constant="26" id="rd6-eg-WiZ"/>
+                            <constraint firstItem="5bt-Sd-GOP" firstAttribute="top" secondItem="aVH-lr-7gC" secondAttribute="topMargin" constant="-92" id="sbJ-rJ-hFB"/>
+                            <constraint firstItem="5bt-Sd-GOP" firstAttribute="centerX" secondItem="qky-yg-T0E" secondAttribute="centerX" id="yM5-nA-NgK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hava Durumu" id="Ons-8P-gfz">
+                        <barButtonItem key="backBarButtonItem" title="Geri" id="Uxc-8T-DKe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityName" destination="tCF-Tj-lHu" id="rgn-h7-2Ck"/>
+                        <outlet property="weather" destination="qky-yg-T0E" id="all-wY-cRy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dd3-ca-dh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.5797101449277" y="-29.464285714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2rI-2P-k6o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Wj-aJ-f3E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ya-1s-hcx">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.048407098959999999" green="0.64225889930000002" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" red="0.048407098959999999" green="0.64225889930000002" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textShadowColor" red="0.048407098959999999" green="0.64225889930000002" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.048407098959999999" green="0.64225889930000002" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.048407098959999999" green="0.64225889930000002" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bda-5N-fM4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPE-EZ-d96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5" width="408" height="612"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
